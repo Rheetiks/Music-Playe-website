@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type=text],
+        [type=PASSWORD],input[type=tel] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .for {
+            padding-top: 2%;
+            padding-bottom: 2%;
+            text-align: center;
+            background-color: #f2f2f2;
+            margin-top: 9%;
+            margin-left: 30%;
+            margin-right: 30%;
+            border: 3px solid #73AD21;
+        }
+
+        input[type=submit] {
+            background-color: #4CAF50;
+            /* Green */
+            margin-top: 8px;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+
+        }
+
+        #loginpage {
+            font-size: 20px;
+
+        }
+
+        .topweb {
+
+            background-color: #121312;
+            /* Green */
+            /* display: inline; */
+
+            padding-top: 3px;
+            padding-bottom: 3px;
+            color: rgb(208, 244, 232);
+            display: 'block'
+
+        }
+
+        #head {
+            display: inline;
+            margin-bottom: 30px;
+        }
+
+        body {
+            background-color: #030932;
+            /* Green */
+        }
+        .button {
+            background-color: #056108;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 12px;
+            margin-left: 2px;
+            transition-duration: 0.4s;
+            
+            cursor: pointer;
+        }
+
+        .button1 {
+            background-color: white;
+            color: black;
+            border: 2px solid #4CAF50;
+        }
+
+        .button1:hover {
+            background-color: #79b07b;
+            /* Green */
+            border-radius: 6px;
+            color: rgb(88, 84, 84);
+            font-size: 15px;
+        }
+        .button2 {
+            background-color: white;
+            color: rgb(90, 87, 87);
+            border: 2px solid #4CAF50;
+        }
+
+        .button2:hover {
+            background-color: #43e648;
+            /* Green */
+            border-radius: 6px;
+            color: rgb(137, 125, 125);
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="for">
+
+        <div id="loginpage">
+            <h3>REGISTRATION PAGE</h3>
+        </div>
+         <form action="http://localhost:8088/html/UserProfile.html">
+        
+        <input type="text" id="username" name="userName" placeholder="username" />
+        <input type="text" id="Email" name="userEmail"  placeholder="Email" />
+        <input type="PASSWORD" id="password" name="userPassword" placeholder="PASSWORD" />
+        <input type="tel" id="Phone" name="userPhoneNo" placeholder="Phone no:" />
+        <br>
+        <button name="submit" class="button button2" type="submit" value="submit">submit</button>
+
+        </form>
+        <a href="http://localhost:8088/html/UserLoginPage.html" > <button class ="button button1" >Login page </button></a>
+        <div id="userdata">
+
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #UploadBlock {
+            background-color: transparent;
+            border: 0cqb;
+            height: 600px;
+            width: 800px;
+            border-style: groove;
+            border-width: 3.5px;
+            border-color: aliceblue;
+            margin: 200px 0 0 400px;
+        }
+
+        #myFile {
+            text-align: center;
+            background-color: white;
+            border-radius: 10px;
+            font-size: large;
+            width: 50%;
+            height: 40px;
+            margin-left: 24.5%;
+            margin-top: 60px;
+        }
+
+        #myFile:hover {
+            border: 1px solid transparent;
+            box-shadow: 0 0 100px 0 #8ebf42;
+            color: #8ebf42;
+        }
+
+
+        #SubmitBtn {
+            margin-left: 47%;
+            margin-top: 40px;
+        }
+
+        body {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+/* 
+        #File{
+            
+        } */
+
+        #title{
+            margin-top: 70px;
+            margin-left: 20px;
+            
+        }
+
+        body,
+        html {
+            height: 100%;
+
+        }
+    </style>
+
+</head>
+
+<body background="/images/UploadPage.jpg" >
+    <div id="UploadBlock">
+        <form action="http://localhost:8088/uploadMusic" enctype="multipart/form-data" method="POST" >
+                <h1 style="font-size: 35px; text-align: center; color: burlywood;">Upload Song</h1>
+                <input type="text" id="myFile" name="musicName"  placeholder="Enter Song Name" />
+                <input type="text" id="myFile" name="musicArtist" placeholder="Enter Song Artist Name" />
+                <h3 id="title">Choose Song FIle:</h3>
+                <input type="file" id="File" name="music"  />
+                <h3 id="title">Choose Cover Image For Song:</h3>
+                <input type="file" id="File" name="musicImageFile"  />
+                <br>
+                <input id="SubmitBtn" type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

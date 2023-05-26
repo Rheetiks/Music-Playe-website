@@ -1,0 +1,292 @@
+#back {
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+#search {
+    background-color: rgb(22, 1, 1);
+    height: 80px;
+}
+
+#searchBtn {
+    margin-left: 200px;
+    float: left;
+}
+
+
+
+#ss {
+    text-align: center;
+    color: white;
+    background-color: rgb(72, 69, 69);
+    /* opacity: 30%; */
+    border-radius: 10px;
+    font-size: large;
+    width: 27.5%;
+    height: 30px;
+    margin-left: 500px;
+    margin-top: 20px;
+
+}
+
+#data {
+    text-align: center;
+    font-size: large;
+    width: 27.5%;
+    margin-left: 580px;
+    position: absolute;
+    z-index: 9;
+    /*glass effect */
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+#cancelBtn {
+    margin-top: 23px;
+    margin-right: 572px;
+    float: right;
+    position: absolute;
+    z-index: 4;
+    opacity: 80%;
+}
+
+#UploadLink {
+    margin-left: 300px;
+    float: right;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#songsbox {
+    position: absolute;
+    z-index: 1;
+    height: 820px;
+    width: 1650px;
+}
+
+
+
+#songlist {
+    height: 820px;
+    width: 460px;
+    float: left;
+    overflow: scroll;
+    background-color: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#songlist::-webkit-scrollbar {
+    display: none;
+}
+
+#songinfo {
+    float: left;
+    width: 200px;
+    height: 70px;
+    max-height: 70px;
+    text-align: left;
+}
+
+#morebtn {
+    margin-top: 21px;
+    float: right;
+}
+
+
+
+#controlbar {
+    float: right;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 100%;
+
+}
+
+#playingSongContainer {
+    background-color: rgb(30, 16, 16);
+    float: right;
+    height: 750px;
+    width: 1180px;
+    z-index: 2;
+}
+
+#musicOption {
+    height: auto;
+    width: 300px;
+    position: absolute;
+    max-height: fit-content;
+    z-index: 3;
+    background-color: rgb(30, 16, 16);
+    text-align: center;
+
+}
+
+#AddBtn,
+#PlaylistNames {
+    color: white;
+    height: 40px;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    background-color: rgb(30, 16, 16);
+}
+
+
+
+#playingSong {
+    height: 100%;
+    width: 100%;
+
+}
+
+#musicImage {
+    height: 820px;
+    width: 1180px;
+}
+
+#songListImage {
+    height: 40px;
+    width: 40px;
+    float: right;
+    margin-left: 380px;
+    margin-top: 15px;
+}
+
+
+
+#playpause {
+    border-radius: 45px;
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
+    margin-left: 50%;
+    overflow: hidden;
+
+}
+
+#bar {
+    height: 5px;
+    width: 1100px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+#forward {
+    float: right;
+    margin-top: 10px;
+    margin-right: 470px;
+
+}
+
+#backward {
+    margin-top: 10px;
+    margin-left: 512px;
+    float: left;
+}
+
+
+
+#song {
+    background-color: rgb(30, 16, 16);
+    color: white;
+    height: 80px;
+    width: 440px;
+    margin-top: 3px;
+    margin-left: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#song:hover {
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+    border-style: solid;
+    border-color: rgb(248, 246, 246);
+    border-width: 1px;
+}
+
+
+#song:focus {
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: white;
+    transition: 2s;
+    border-width: 1px;
+
+}
+
+
+body,
+html {
+    height: 100%;
+    background-color: rgb(30, 16, 16)
+}
+
+#playlistsLink {
+    float: right;
+    margin-top: 25px;
+    margin-right: 30px;
+    color: aquamarine;
+}
+
+
+
+
+#PlaylistName {
+    min-height: 40px;
+    height: auto;
+    width: 400px;
+    background-color: rgb(245, 243, 241);
+    color: rgb(7, 20, 20);
+    margin-top: 350px;
+    margin-left: 37%;
+    position: absolute;
+    z-index: 4;
+}
+
+#playlistbtn {
+    height: 30px;
+    width: 100%;
+    color: white;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(30, 16, 16);
+}
+
+#playlistbtn:hover{
+    background-color: black;
+    color: white;
+    transition: 0.8s;
+    border-style: solid;
+    border-color: rgb(248, 246, 246);
+    border-width: 1px;
+}
+
+#PlaylistLink{
+    background-color: rgb(17, 0, 0);
+    height: 80px;
+    width: 100%;
+}
+
+#createPlistBtn{
+    height: 35px;
+    margin-top: 6px;
+    float: right;
+
+}

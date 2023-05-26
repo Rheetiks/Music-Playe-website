@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tb {
+            border-collapse: collapse;
+        }
+
+        .tb th,
+        .tb td {
+            padding: 5px;
+            border: solid 1px #777;
+        }
+
+        .tb th {
+            background-color: #04AA6D;
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <h3>your data</h3>
+    <table class="tb" style="width:650px;">
+        <thead>
+            <tr>
+                <th>USER ID:</th>
+                <th>Usename</th>
+                <th>Email </th>
+                <th>password</th>
+                <th>Phone:</th>
+            </tr>
+        </thead>
+        <tbody id="userdata">
+
+        </tbody>
+    </table>
+
+    <script>
+
+var input = {};
+        var que = window.location.search;
+        var url = new URLSearchParams(que);
+        let User={};
+        User.userName = url.get('userName');
+        User.userEmail = url.get('userEmail');
+        User.userPassword = url.get('userPassword');
+        User.userPhoneNo = url.get('userPhoneNo');
+
+        console.log(User);
+          async function callApi() {
+            let result = await fetch('http://localhost:8088/addUser', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(User)
+            });
+            console.log(result);
+            result = await result.json();
+            console.log(result);
+            document.getElementById("userdata").innerHTML =
+            `<tr class ="data">
+                <td>${result.userId}</td>
+                <td>${result.userName}</td>
+                <td>${result.userEmail}</td>
+                <td>${result.userPassword}</td>
+                <td>${result.userPhoneNo}</td>
+             </tr>` 
+            
+        }
+        callApi();
+    </script>
+    <br/>
+    <a href="http://localhost:8088/html/UserLoginPage.html">Login page</a>
+
+</body>
+
+</html>
